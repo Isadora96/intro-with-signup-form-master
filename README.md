@@ -15,13 +15,12 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ### Screenshot
 
-### ![image-20210805222145499](C:\Users\usuario\AppData\Roaming\Typora\typora-user-images\image-20210805222145499.png)
+![image](https://user-images.githubusercontent.com/80006401/128570462-1ec94466-e086-4431-bd21-b69b1ccc6f85.png)
 
-![image-20210805222240251](C:\Users\usuario\AppData\Roaming\Typora\typora-user-images\image-20210805222240251.png)
-
+![image](https://user-images.githubusercontent.com/80006401/128570570-8b6d6cfe-3790-4eba-a462-9180b4c0178f.png)
 ### Links
 
-- Live Site URL:  [Check it out here](https://isadora96.github.io/intro-with-signup-form/)
+- Live Site URL:  [Check it out here](https://isadora96.github.io/intro-with-signup-form-master/)
 
 ## My process
 
