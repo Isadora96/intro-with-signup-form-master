@@ -33,6 +33,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ## Author
 
-- Website - [isadoralopes](https://isadoralopes.netlify.app/)
+- Website - [isadoralopes](https://isadora96.github.io/portfolio-dev-isa/)
 - Frontend Mentor - [@Isadora96](https://www.frontendmentor.io/profile/Isadora96)
 
