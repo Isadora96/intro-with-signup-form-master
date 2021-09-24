@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
@@ -23,10 +24,39 @@
       <div class="section-form">
         <p class="middle-phrase"><strong>Try it free 7 days</strong> then <span class="block">$20/mo. thereafter</p></span></p>
         <form id="data-collector">
-          <input name="first-name" type="text" placeholder="First Name" required>
-          <input name="last-name" type="text" placeholder="Last Name" required>
-          <input name="email" type="email" placeholder=" Email Address" required>
-          <input name="password" type="password" placeholder="Password" required>
+          
+          <div class="input-div-form">
+            <label for="first-name"></label>
+            <input name="first-name" type="text" id="first-name" placeholder="First Name">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+          </div>
+          
+          <div class="input-div-form">
+            <label for="last-name"></label>
+            <input name="last-name" type="text" id="last-name" placeholder="Last Name">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+          </div>
+          
+          <div class="input-div-form">
+            <label for="email"></label>
+            <input name="email" type="email" id="email" placeholder=" Email Address">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <p class="error"></p>
+          </div>
+          
+          <div class="input-div-form">
+            <label for="password"></label>
+            <input name="password" type="password" id="password" placeholder="Password">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+          </div>
+          
           <button id="btn" class="btn" type="submit">Claim your free trial</button>
           <p class="terms-services">By clicking the button, you are agreeing to our <span class="span-form">Terms and Services</span> </p>
         </form>

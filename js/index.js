@@ -1,23 +1,38 @@
-let dataCollector = document.querySelector('#data-collector')
+const firstName = document.querySelector("#first-name")
+const lastName = document.querySelector("#last-name")
+const email = document.querySelector("#email")
+const password = document.querySelector("#password")
+const successIcon = document.querySelectorAll(".success-icon")
+const failureIcon = document.querySelectorAll(".failure-icon")
+const errorMsgDiv = document.querySelectorAll(".error")
+//console.log(successIcon)
+const dataCollector = document.querySelector('#data-collector')
 
-dataCollector.addEventListener("submit", function(event) {
-    event.preventDefault()
+dataCollector.addEventListener("submit", (event) => {
+    event.preventDefault();
     
-    let formData = new FormData(event.target)
+    checkForm(firstName, 0, "First Name cannot be empty")
+    checkForm(lastName, 1, "Last Name cannot be empty")
+    checkForm(email, 2, "Looks like this is not an email")
+    checkForm(password, 3, "Password cannot be empty")
+});
 
-    let userFirstName = formData.get("first-name")
-    let userLastName = formData.get('last-name')
-    let userEmail = formData.get("email")
+const checkForm = (id, number, message) => {
+    if(id.value.trim() === '') {
+        errorMsgDiv[number].innerText = message
+        id.style.border = "2px solid red"
 
-    let updatedHtmlContent = `
-        <h2>Thank you, ${userFirstName} ${userLastName}!</h2>
+        //icons
+        failureIcon[number].style.opacity = "1"
+        successIcon[number].style.opacity = "0"
+    } else {
+        errorMsgDiv[number].innerText = ""
+        id.style.border = "2px solid green"
 
-        <p>Your interaction with this page will help me become a better developer!</p>
+        //icons
+        failureIcon[number].style.opacity = "0"
+        successIcon[number].style.opacity = "1"
+    }
+}
 
-        <p class="fine-print">Nothing was sent to: ${userEmail}</p>
-
-    `
-     
-    dataCollector.innerHTML = updatedHtmlContent
-})
 
